@@ -1,0 +1,20 @@
+require('dotenv').config();
+
+const express = require('express');
+const mongoose = require('mongoose');
+require('./db/conn');
+
+
+const app = express();
+
+
+const port = 8003;
+
+const DB = "mongodb+srv://crud-app-mern-basic:Q1zCeoKNAp1XSYuP@cluster0.nnlp5.mongodb.net/crud_app?retryWrites=true&w=majority";
+
+
+app.listen(port, () => { 
+    console.log(`Server is running on http://localhost:${port}`);
+
+})
+
